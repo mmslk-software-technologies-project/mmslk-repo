@@ -8,15 +8,15 @@ namespace TEST
    
             static void Main()
             {
-                var firstNumber = int.Parse(Console.ReadLine());
-                var secondNumber = int.Parse(Console.ReadLine());
-                var thirdNumber = int.Parse(Console.ReadLine());
-                var forthNumber = int.Parse(Console.ReadLine());
+                var firstNum = int.Parse(Console.ReadLine());
+                var secondNum = int.Parse(Console.ReadLine());
+                var thirdNum = int.Parse(Console.ReadLine());
+                var forthNum = int.Parse(Console.ReadLine());
 
-                var firstmod = firstNumber.ToString("D4");
-                var secondmod = secondNumber.ToString("D4");
-                var thirdmod = thirdNumber.ToString("D4");
-                var forthmod = forthNumber.ToString("D4");
+                var firstmod = firstNum.ToString("D4");
+                var secondmod = secondNum.ToString("D4");
+                var thirdmod = thirdNum.ToString("D4");
+                var forthmod = forthNum.ToString("D4");
 
             Console.WriteLine($"{firstmod} {secondmod} {thirdmod} {forthmod}");
 
