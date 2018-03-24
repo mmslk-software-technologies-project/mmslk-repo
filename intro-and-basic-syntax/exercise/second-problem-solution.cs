@@ -1,4 +1,5 @@
 ﻿//CONFIRMED from <MarinTsankov>
+//CONFIRMED from <krzgo>
 using System;
 
 namespace P02_RectangleArea
@@ -10,9 +11,9 @@ namespace P02_RectangleArea
             double sideA = double.Parse(Console.ReadLine());
             double sideB = double.Parse(Console.ReadLine());
             /* We are multiplying sides to get the round value*/
-            double area = sideA * sideB;
+            double areaOfRectangle = sideA * sideB;
             /* We are printing the result*/
-            Console.WriteLine($"{area:f2}");
+            Console.WriteLine($"{areaOfRectangle:f2}");
         }
     }
 }
