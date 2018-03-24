@@ -14,9 +14,12 @@ namespace xcvbnm
             int currEnergy = int.Parse(Console.ReadLine());
             int maxEnergy = int.Parse(Console.ReadLine());
 
+            var maxHealthfinal = maxHealth - currHealth;
+            var maxEnergyfinal = maxEnergy - currEnergy;
+
             Console.WriteLine("Name: {0}", name);
-            Console.WriteLine("Health: |{0}{1}|",new string('|', currHealth), new string('.', maxHealth));
-            Console.WriteLine("Energy: |{0}{1}|",new string('|', currEnergy), new string('.', maxEnergy));
+            Console.WriteLine("Health: |{0}{1}|",new string('|', currHealth), new string('.', maxHealthfinal));
+            Console.WriteLine("Energy: |{0}{1}|",new string('|', currEnergy), new string('.', maxEnergyfinal));
         }
     }
 }
