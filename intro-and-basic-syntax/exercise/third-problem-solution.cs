@@ -10,10 +10,10 @@ namespace xcvbnm
 			//We receive digit from the Console.
             double miles = double.Parse(Console.ReadLine());
 
-            double kilometerPerMile = 1.60934;
+            double kmPerMile = 1.60934;
 
 			//Convert miles to kilometers
-            double kilometer = miles * kilometerPerMile;
+            double kilometer = miles * kmPerMile;
 
             Console.WriteLine($"{kilometer:F2}");
         }

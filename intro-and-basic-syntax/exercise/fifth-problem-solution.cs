@@ -9,18 +9,18 @@ namespace xcvbnm
         {   /*We receive the values from the console*/
             string name = Console.ReadLine();
 
-            int currHealth = int.Parse(Console.ReadLine());
+            int currentHealth = int.Parse(Console.ReadLine());
             int maxHealth = int.Parse(Console.ReadLine());
 
-            int currEnergy = int.Parse(Console.ReadLine());
+            int currentEnergy = int.Parse(Console.ReadLine());
             int maxEnergy = int.Parse(Console.ReadLine());
             /*We are getting the value of full capacity without the current condition*/
-            var maxHealthfinal = maxHealth - currHealth;
-            var maxEnergyfinal = maxEnergy - currEnergy;
+            var maxHealthfinal = maxHealth - currentHealth;
+            var maxEnergyfinal = maxEnergy - currentEnergy;
             /*We are printing the results*/
             Console.WriteLine("Name: {0}", name);
-            Console.WriteLine("Health: |{0}{1}|",new string('|', currHealth), new string('.', maxHealthfinal));
-            Console.WriteLine("Energy: |{0}{1}|",new string('|', currEnergy), new string('.', maxEnergyfinal));
+            Console.WriteLine("Health: |{0}{1}|",new string('|', currentHealth), new string('.', maxHealthfinal));
+            Console.WriteLine("Energy: |{0}{1}|",new string('|', currentEnergy), new string('.', maxEnergyfinal));
         }
     }
 }
